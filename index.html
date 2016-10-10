@@ -2,13 +2,17 @@
   <head>
     <title>YouCube - The Blog for Cube Puzzlers</title>
 
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="main.js" defer></script>
   </head>
 
   <body onload="showBlog(5);">
     <h3>YouCube - The Blog for Cube Puzzlers</h3>
     <img src="cube.png" alt="YouCube" />
     <div id="blog"></div>
+    <input type="button" id="search" value="Search the Blog" onclick="searchBlog()">
+    <input type="text" id="searchtext" name="searchtext" value=""><br>
+    <span id="searchresult"></span>
+    <br><br>
     <input type="button" id="showall" value="Show All Blog Entries" onclick="showBlog();" />
   </body>
 </html>
